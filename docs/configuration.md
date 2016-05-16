@@ -898,7 +898,7 @@ configuration may contain both.
       headers:
         X-Content-Type-Options: [nosniff]
 
-The `http` option details the configuration for the HTTP server that hosts the registry.
+The `http` option details the configuration for the HTTP server that hosts the registry. Registry accepts $HTTP\_PROXY and $NO\_PROXY environment variables as http proxy configuration.
 
 <table>
   <tr>
