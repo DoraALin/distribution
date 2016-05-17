@@ -898,7 +898,9 @@ configuration may contain both.
       headers:
         X-Content-Type-Options: [nosniff]
 
-The `http` option details the configuration for the HTTP server that hosts the registry. Registry accepts $HTTP\_PROXY and $NO\_PROXY environment variables as http proxy configuration.
+The `http` option details the configuration for the HTTP server that hosts the registry.
+
+During http configuration, registry uses the proxy indicated by $HTTP\_PROXY and $NO\_PROXY environment variables. See [document for http package](https://golang.org/pkg/net/http/#ProxyFromEnvironment) for details.
 
 <table>
   <tr>
